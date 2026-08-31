@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "description": "Chron Time Module",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "Randall Knutson <randall@knutson.io>",
   "license": "MIT",
   "files": [
     "lib"
   ],
   "scripts": {
-    "start": "node -r ts-node/register index.ts",
+    "start": "node -e \"const { now } = require('./lib'); console.log(now().toCanonical());\"",
     "test": "mocha --require ts-node/register --reporter spec './{,!(node_modules)/**/}*.test.ts'",
     "watch": "tsc -w",
     "build": "tsc",
