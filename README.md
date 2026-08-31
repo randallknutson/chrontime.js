@@ -1,6 +1,6 @@
 # Chron Time
 
-TypeScript implementation of [Chron Time](./CHRON-TIME-SPEC.md), a calendar date and time-of-day notation that keeps the Gregorian year and leap rule, writes the year as 26 fortnights plus Year Day and Leap Day, divides the day into 1000 chrons, and uses a longitude zone whose sign adds toward GMT.
+TypeScript implementation of [Chron Time](https://github.com/randallknutson/chrontime/blob/main/CHRON-TIME-SPEC.md), a calendar date and time-of-day notation that keeps the Gregorian year and leap rule, writes the year as 26 fortnights plus Year Day and Leap Day, divides the day into 1000 chrons, and uses a longitude zone whose sign adds toward GMT.
 
 ```
 npm install @chrontime/chrontime
@@ -145,4 +145,4 @@ npm test
 npm run build
 ```
 
-The grammar, conversion equations, and worked examples are in [`CHRON-TIME-SPEC.md`](./CHRON-TIME-SPEC.md).
+The grammar, conversion equations, and worked examples are in the [Chron Time spec](https://github.com/randallknutson/chrontime/blob/main/CHRON-TIME-SPEC.md).

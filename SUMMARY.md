@@ -1,6 +1,6 @@
 # Chron Time implementation summary
 
-Implemented the draft Chron Time spec (`CHRON-TIME-SPEC.md`, 2026-08-30) as a TypeScript library with tests. Source under `src/` was rewritten. Nothing was pushed.
+Implemented the draft Chron Time spec (https://github.com/randallknutson/chrontime, 2026-08-30) as a TypeScript library with tests. Source under `src/` was rewritten. Nothing was pushed.
 
 ## What shipped
 
@@ -28,7 +28,6 @@ Public API is in `src/index.ts`: `parse`, `ChronInstant`, `ChronDate`, `ChronTim
 | `src/zone.ts` | Longitude and zone range |
 | `src/rfc3339.ts` | RFC 3339 → UTC Chron fields |
 | `src/chron.test.ts` | Spec examples, profiles, conversions |
-| `CHRON-TIME-SPEC.md` | Draft spec |
 
 The previous `src/Chron.ts` parser/formatter did not match this spec (civil-style default offset, unpadded default output, no profiles, no durations, zones outside `[-499, +500]`). It was replaced.
 
